@@ -1,0 +1,44 @@
+{
+  "name": "strider-particle",
+  "version": "1.0.0",
+  "description": "Particle cloud integration for Strider CD",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "strider": {
+    "id": "particle",
+    "title": "Particle",
+    "icon": "logo.png",
+    "type": "job",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "config": {
+      "controller": "TemplateCtrl"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emcniece/strider-particle.git"
+  },
+  "keywords": [
+    "particle",
+    "strider",
+    "cloud"
+  ],
+  "author": "Eric McNiece <emcniece@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emcniece/strider-particle/issues"
+  },
+  "homepage": "https://github.com/emcniece/strider-particle#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "particle-api-js": "^5.2.6"
+  }
+}
