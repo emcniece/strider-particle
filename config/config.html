@@ -1,12 +1,25 @@
+<script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/6/particle.min.js"></script>
+
 <div id="template" class="well">
-    <h2>Template Config Page</h2>
-    <button ng-click="save()" class="btn btn-primary">Save</button>
-    <br/>
-    <br/>
-    <p class="help-text">
-        These are some messages for demonstrating how the plugin saves config data and reports it during the test process.
-        Each message used slightly differently, so see `worker.js` for different ways to execute actions using config data
-    </p>
+    <h2>Particle Config</h2>
+    <p class="help-text">Here you can define custom Particle events for each step of the build process. Each action requires an access token and device ID.</p>
+    <p>Tokens can be entered manually, or you can use your Particle login credentials to read devices directly from your account.</p>
+
+    <h3>Account Login</h3>
+      <div class="row-fluid">
+        <div class="span12">
+          <form class="form-inline">
+            <input ng-model="config.email" type="text" class="input-small" placeholder="Email">
+            <input ng-model="config.password" type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+              <input ng-model="config.rememberUser" type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn btn-primary" ng-click="login()">Sign in</button>
+          </form>
+        </div>
+      </div>
+
+
     <h3>Environment</h3>
     <div class="row-fluid">
         <div class="span12">

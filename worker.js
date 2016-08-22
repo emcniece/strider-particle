@@ -1,4 +1,6 @@
-// test
+var Particle = require('particle-api-js');
+var particle = new Particle();
+
 /* Functions for demonstration purposes only */
 var checkSomething = function(context, callback){
   //Do something here, then call back

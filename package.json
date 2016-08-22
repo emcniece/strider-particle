@@ -1,44 +1,87 @@
 {
-  "name": "strider-particle",
-  "version": "1.0.0",
-  "description": "Particle cloud integration for Strider CD",
-  "main": "webapp.js",
-  "scripts": {
-    "test": "mocha -R spec --recursive test"
-  },
-  "strider": {
-    "id": "particle",
-    "title": "Particle",
-    "icon": "logo.png",
-    "type": "job",
-    "worker": "worker.js",
-    "webapp": "webapp.js",
-    "config": {
-      "controller": "TemplateCtrl"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/emcniece/strider-particle.git"
-  },
-  "keywords": [
-    "particle",
-    "strider",
-    "cloud"
+  "_args": [
+    [
+      "git+https://git@github.com:emcniece/strider-particle.git#dev",
+      "/Users/emcniece/Code/nodejs/particle-strider/strider"
+    ]
   ],
-  "author": "Eric McNiece <emcniece@gmail.com>",
-  "license": "ISC",
+  "_from": "git+ssh://git@github.com/emcniece/strider-particle.git#dev",
+  "_id": "strider-particle@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/strider-particle",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/emcniece/strider-particle/dev/package.json",
+      "gitUrl": "git://github.com/emcniece/strider-particle.git#dev",
+      "httpsUrl": "git+https://github.com/emcniece/strider-particle.git#dev",
+      "shortcut": "github:emcniece/strider-particle#dev",
+      "ssh": "git@github.com:emcniece/strider-particle.git#dev",
+      "sshUrl": "git+ssh://git@github.com/emcniece/strider-particle.git#dev",
+      "type": "github"
+    },
+    "name": null,
+    "raw": "git+https://git@github.com:emcniece/strider-particle.git#dev",
+    "rawSpec": "git+https://git@github.com:emcniece/strider-particle.git#dev",
+    "scope": null,
+    "spec": "git+ssh://git@github.com/emcniece/strider-particle.git#dev",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/emcniece/strider-particle.git#2c66988603fc8f43736a3a8e51137f48f916183f",
+  "_shasum": "4914904d4338ea65e086043494ec53e9f82ebc4a",
+  "_shrinkwrap": null,
+  "_spec": "git+https://git@github.com:emcniece/strider-particle.git#dev",
+  "_where": "/Users/emcniece/Code/nodejs/particle-strider/strider",
+  "author": {
+    "email": "emcniece@gmail.com",
+    "name": "Eric McNiece"
+  },
   "bugs": {
     "url": "https://github.com/emcniece/strider-particle/issues"
   },
-  "homepage": "https://github.com/emcniece/strider-particle#readme",
+  "dependencies": {
+    "particle-api-js": "^5.2.6"
+  },
+  "description": "Particle cloud integration for Strider CD",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
   },
-  "dependencies": {
-    "particle-api-js": "^5.2.6"
-  }
+  "gitHead": "2c66988603fc8f43736a3a8e51137f48f916183f",
+  "homepage": "https://github.com/emcniece/strider-particle#readme",
+  "keywords": [
+    "particle",
+    "strider",
+    "cloud"
+  ],
+  "license": "ISC",
+  "main": "webapp.js",
+  "name": "strider-particle",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emcniece/strider-particle.git"
+  },
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "strider": {
+    "config": {
+      "controller": "TemplateCtrl"
+    },
+    "icon": "logo.png",
+    "id": "particle",
+    "title": "Particle",
+    "type": "job",
+    "webapp": "webapp.js",
+    "worker": "worker.js"
+  },
+  "version": "1.0.0"
 }
